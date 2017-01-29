@@ -1,0 +1,197 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 .2em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content, .entry-content div,
+.entry-summary {
+	margin: 1.5em 0 0;
+	.full();
+	.font-size(1.4);
+	padding: 0 0 10px 0;
+
+	a p{
+		color:@color__text-screen;
+	}
+
+	.entry-meta{
+		span{
+			float:left;
+		}
+	}
+}
+
+// .blog .entry-content{
+// 	float:left;
+// 	width:auto!important;
+// }
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.lib-list{
+	padding:20px 0;
+
+	h1{
+		padding:25px 0 0 0;
+	}
+}
+
+footer.entry-footer {
+	.full();
+  padding: 8px 0;
+  border-top: 2px solid @yellow;
+  
+
+  span.edit-link{
+  	padding:10px 0 0 0;
+  	.full();
+  }
+  span.cat-links{
+  	.full();
+  }
+  span.comments-link{
+	margin: 12px 0;
+	.full();
+  	a{
+  		color:#fff;
+  		background:@blue;
+  		padding:10px;
+  		border-radius: 6px;
+
+  		&:hover{
+  			background: lighten(@blue, 10%)
+  		}
+  	
+  	}
+  }
+}
+
+// CONACT PAGE 
+
+ul.tabs{
+		.full();
+			margin: 0px;
+			padding: 20px 0;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 0 15px;
+			cursor: pointer;
+			text-align: center;
+
+			span{
+				.full();
+			}
+
+			.name{
+				.font-size(1.6);
+				color:@blue;
+				font-weight: 600;
+			}
+
+			.phone{
+				.font-size(1.4)
+			}
+
+			.hours{
+				.font-size(1.4)
+			}
+
+
+		}
+
+.dept-title{
+		.full();
+		text-align: center;
+		color:@color_member_dept_title;
+		padding: 0 0 4px 0;
+		border-bottom: 4px solid @color_member_dept_title_brd;
+		.font-size(2.5);
+		font-weight: 600;
+		margin: 20px 0;
+	}
+
+
+	// OFFICE PAGES
+
+.page-template-page-location-southburlington, 
+.page-template-page-location-hinesburg, 
+.page-template-page-location-shelburne, 
+.page-template-page-templatespage-location-southburlington-php,
+.page-template-page-templatespage-location-shelburne-php,
+.page-template-page-templatespage-location-hinesburg-php{
+
+	.site-branding.col.span_1_of_2 {
+	    margin: 0;
+	}	
+
+	div#classes div.classes {
+		span.title{
+			.full();
+			background:@blue;
+
+			h2{
+				color: #fff;
+				font-size:1.4em;
+				font-weight:600;
+				text-indent: 6px;
+				padding: 6px 0;
+			}
+		}
+
+		.content{
+			
+			.full();
+		}
+
+		&:hover{
+			opacity: 0.9;
+			background: rgba(255,255,255,0.5);
+		}
+	}
+
+
+
+	#members ul li, .member-dept ul li{
+
+	    display: inline-block;
+    	float: left;
+    	height: 250px;
+
+		.member-name{
+			.full();
+			.font-size(1.6);
+			padding: 10px  0 2px 0;
+			  border-bottom: 2px solid #f0b40f;
+			  text-align:center;
+			  font-weight:600;
+		}
+
+		&:hover{
+			opacity: 0.9;
+			background: rgba(255,255,255,0.5);
+		}
+	}
+
+	
+}	
+

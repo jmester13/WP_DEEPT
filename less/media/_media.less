@@ -1,0 +1,281 @@
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+@import "_captions";
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+@import "_galleries";
+
+@media only screen and (max-width: 568px) {
+	
+	//display:none
+
+	#slideshow, #footer .site-title,.topper,.footer-navigation, #members .member-info, .comments-link,
+	#search-3{
+		display:none;
+	}
+
+	#utility-bar ul {
+
+		li{
+			padding:0 8px;
+		}
+
+		span{
+			float:left;
+			width:48%;
+		}
+	}
+
+	#utility-bar ul.office{
+		display:none;
+	}
+
+	#masthead{
+		height: 132px;
+		min-height: 132px;
+		.site-socials{
+			display:none;
+		}
+
+		.site-title a{
+			width:260px;
+			height:83px;
+			background:url('./assets/img/logo-mobile.png') no-repeat;
+		}
+		nav#site-navigation {
+		  position: absolute;
+		  z-index: 9999999;
+		  top: -45px;
+		  background: transparent!important;
+
+		  .menu-toggle{
+		  	float:right;
+		  }
+
+		  ul{
+		  	background:@blue;
+			padding: 10px 0;
+
+			li{
+		  		.full();
+		  		a{
+		  			color:#fff;
+		  				&:hover{
+		  					color:@yellow;
+		  				}
+		  		}
+		  	}
+
+		  }
+		}
+	} // MASTHEAD
+
+	// SLideshow
+
+	.slideshow_container{
+		display:none;
+	}
+
+	#content {
+	    margin-top: 150px;
+	}
+
+	// YouTube
+
+	.ytctdescription{display: none;}
+
+	// FRONT PAGE
+
+	.home.page #secondary.widget-area span h3, .home.page #secondary.widget-area span h1, {
+		margin:0;
+		.font-size(2.2);
+	}
+
+	.home.page #secondary.widget-area .widget h6{
+		width:160px;
+	}
+
+	// MEMBERS
+
+	#members {
+		h3.intro{
+			.font-size(1.6);
+			border-bottom: 2px solid #f0b40f;
+		}
+
+		.member-dept span.title{
+			.font-size(1.6);
+			padding: 0 0 1px 0;
+			  border-bottom: 2px solid #f0b40f;
+		}
+		.tab-content li {
+		  min-height: 280px;
+		}
+	}
+
+
+
+	// Contact 
+
+	input.wpcf7-form-control.wpcf7-text {
+	  width: 98%;
+	}
+
+	// Footer
+
+	#footer ul.socials{
+		float:left;
+		.nomargin();
+	}
+	#footer .span_1_of_5 {
+		    width: 100%;
+		}
+
+}
+
+// IPAD Both Ways
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+	.container {
+	  clear: both;
+	  width: 85%;
+	}
+
+	#content {
+	    margin-top: 150px;
+	}
+	
+	#masthead {
+		height:130px;
+		min-height:130px;
+		border-bottom: 4px solid @yellow;
+		.site-title a{
+			width:240px;
+			height:77px;
+			background:url('./assets/img/logo-ipad.png') no-repeat;
+		}
+
+		nav#site-navigation li{
+			padding:0 8px;
+			a{.font-size(1.6);}
+		}
+	}
+
+	.topper.testimonials,.topper.members{
+		padding:0 0 0 0;
+	 	div#topper-content{
+			
+		}
+	}
+
+	#footer .span_1_of_5 {
+		    width: 44.72%;
+		}
+
+	#footer .site-title a{
+			color:@color_footer_link;
+			background:url('./assets/img/footer-logo-mobile.png') no-repeat;
+			width:180px;
+			height:57px;
+	      	text-indent: -9999px;
+	      	position:absolute;
+	      	top: 10px;
+	}
+
+	#footer .footer-navigation li{
+			padding: 0 21px;
+		}
+
+	#footer .site-branding #office-info {
+	 
+	  padding: 10px 0 0 0;
+	}
+
+}
+
+
+// IPAD Landscape
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+// IPAD Portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	.main-navigation ul ul{
+	  	top:2.7em;
+	  }
+	  aside input.search-field {
+		  width: 98%;
+		}
+	#masthead nav#site-navigation {
+	  .font-size(1.2);
+	  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	  background: #fff;
+	  margin-top: 15px;
+
+	  li{
+		padding: 0 4px;
+		  a{
+		  	.font-size(1.3)!important;
+		  }
+		}
+	}
+
+	.topper.testimonials #topper-img{
+		display:none;
+	}
+
+	.topper.testimonials #topper-content{
+		.full()!important;
+		padding:0!important;
+	}
+
+	.home.page #secondary.widget-area span h3, 
+	.home.page #secondary.widget-area span h1{
+		.font-size(1.6);
+		margin: 10px 0;
+	}
+
+	.home.page #secondary.widget-area .widget h6{
+		width:140px;
+	}
+
+	#members .tab-content li {
+	  height: 540px;
+	}
+
+
+	#footer .footer-navigation li {
+		padding: 0 10px;
+		a{
+			.font-size(1.4);
+		}
+
+	}
+}

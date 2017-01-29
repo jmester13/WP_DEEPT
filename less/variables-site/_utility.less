@@ -1,0 +1,41 @@
+		#utility-bar{
+
+			position:fixed;
+			z-index: 99999;
+			.full();
+			background:@color_utility_bg;
+			color:@color_utility_text;
+			border-bottom:5px solid #e22034;
+
+			.col {
+			  display: block;
+			  float: left;
+			  margin: 0 0 0 0;
+			}
+
+
+
+			ul{
+				float:left;
+				.nomargin();
+				
+				li,span,a{
+					color:@color_utility_text;
+					float:left;
+					padding:0 2px;
+				}
+			}
+
+			ul.office{
+				float:right;
+				padding:10px 0 0 0;
+			}
+
+			.site-socials.col.span_1_of_2 {
+			    margin: 0 0 0 0;
+
+			    ul{
+			    	margin: 4px 0 0 0 ;
+			    }
+			}
+		}

@@ -1,0 +1,117 @@
+#footer{
+	background:@color_footer_bg;
+	color:@color_footer_text;
+	min-height: 200px;
+
+	.site-branding{
+		.full();
+		padding: 0 0 20px 0;
+		color:@color_footer_text;
+
+		h1{
+			.full();
+			height:86px;
+		}
+
+		#office-info{
+			
+			margin: 30px 0 0 0;
+			
+
+			ul{.nomargin();
+				}
+		}
+		span{
+				.full();
+				text-align: left;
+			}
+
+			.name{
+				.font-size(1.6);
+				font-weight: 600;
+			}
+
+			.phone{
+				.font-size(1.4)
+			}
+
+			.hours{
+				.font-size(1.4)
+			}
+	}
+
+		.site-title{
+		color:@color_footer_text;
+
+		a{
+			color:@color_footer_link;
+			background:url('./assets/img/footer-logo.png') no-repeat;
+			width:441px;
+	      	height:116px;
+	      	text-indent: -9999px;
+	      	position:absolute;
+	      	top: 40px;
+
+			&:hover{
+				color:@color_footer_link_hvr
+			}
+		}
+	}
+
+	.site-description{
+		color:@color_footer_text;
+	}
+
+	a{
+		color:@color_footer_link;
+
+		&:hover{
+			color:@color_footer_link_hvr;
+		}
+	}
+
+	ul.socials{
+		.full();
+		margin: 0;
+		li{
+			padding:0 16px;
+
+
+			.fa-circle{
+				color:@color_footer_circle;
+			}
+
+			.fa-stack-1x{
+				color:@color_footer_icon;
+			}
+
+			a:hover{
+				.fa-stack-1x{
+					color:@color_footer_icon_hvr;
+				}
+			}
+		}
+	}
+
+	.footer-navigation{
+		.full();
+		background:@color_footer_nav_bg;
+		padding:0 0 18px 0;
+
+
+		li {
+			padding: 0 42px;
+			font-size: 1.2em;
+			ul{
+				display:none;
+			}
+		}
+	}
+
+	.site-info{
+		.full();
+		background:@color_footer_info_bg;
+		text-align: right;
+		a,a:hover{color:#000;}
+	}
+}

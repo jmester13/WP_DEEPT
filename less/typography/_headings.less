@@ -1,0 +1,85 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+.home.page  h1.entry-title {
+	&:hover{
+		border-bottom:3px solid @yellow;
+	}
+}
+
+h1.entry-title{
+		padding:5px 0 2px 10px;
+		border-bottom:3px solid @yellow;
+		color:@color_title;
+		.font-size(2.1);
+		font-weight: 600;
+		.full();
+
+		a{
+			text-decoration: none;
+		}
+
+		&:hover{
+			color:@color_title_hvr;
+			// border-bottom:3px solid @color_title_hvr;
+			a{
+				text-decoration: none;
+			}
+			
+		}
+}
+
+h1.page-title {
+		padding:5px 0 2px 10px;
+		border-bottom:3px solid @yellow;
+		color:@color_title;
+		margin-bottom: 25px;
+		.font-size(2.4);
+		font-weight: 600;
+		.full();
+
+		a{
+			text-decoration: none;
+		}
+
+		&:hover{
+			color:@color_title_hvr;
+			// border-bottom:3px solid @color_title_hvr;
+			a{
+				text-decoration: none;
+			}
+			
+		}
+}
+
+.widget-title, .widget_have_widget h3{
+		padding:0 0 2px 0;
+		border-bottom:3px solid @yellow;
+		color:@color_title;
+		.font-size(1.4);
+		font-weight: 600;
+		.full();
+}
+
+h3#reply-title{
+	padding:20px 0 2px 0;
+	border-bottom:3px solid @yellow;
+	color:@color_title;
+	margin-bottom: 25px;
+		.font-size(1.8);
+		font-weight: 600;
+		.full();
+
+		a{
+			text-decoration: none;
+		}
+
+		&:hover{
+			color:@color_title_hvr;
+			// border-bottom:3px solid @color_title_hvr;
+			a{
+				text-decoration: none;
+			}
+		}
+}
