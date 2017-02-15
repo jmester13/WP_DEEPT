@@ -11,7 +11,7 @@
 
 		
 	</header><!-- .entry-header -->
-	<div class="featuredimage">
+	<!-- <div class="featuredimage">
 		<?php 
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail('');
@@ -19,7 +19,7 @@
 			else {
 				echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/img/post-icon.jpg" />';
 			}  ?>
-		</div>
+		</div> -->
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
