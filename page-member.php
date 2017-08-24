@@ -142,6 +142,62 @@ get_header(); ?>
                 ),
                    array(
                   'key' => 'title',
+                  'value' => '7',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+              ),
+            )
+          );
+          if ( have_posts() ) : while ( have_posts() ) : the_post();
+        ?>
+    <?php 
+     
+     echo '<li class="col span_1_of_3"><a href="';
+            the_permalink();
+            echo '">';
+        echo '<span class="img">';
+          echo the_post_thumbnail('member'); 
+            echo '</span>';
+            
+             $name_id = get_post_field(get_the_ID(), 'name', true);
+              $name = get_post($name_id);
+
+                echo '<span class="member-name">'.$name->post_title; 
+                echo'</span>';
+
+             echo '<div class="member-info">';
+                the_excerpt();
+            echo '</div>';
+            echo '</a>';
+            echo '</li>';
+    
+?>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
+
+ <?php
+
+          query_posts( array( 
+            'post_type' => 'member', 
+            'order' => 'ASC ', 
+            'posts_per_page' => '20',
+            'meta_query' => array(
+                array(
+                  'key' => 'office',
+                  'value' => '2',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+                 array(
+                  'key' => 'department',
+                  'value' => '1',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+                   array(
+                  'key' => 'title',
                   'value' => '2',
                   'compare' => '=',
                   'type' => 'numeric',
@@ -433,6 +489,62 @@ get_header(); ?>
                    array(
                   'key' => 'title',
                   'value' => '1',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+              ),
+            )
+          );
+          if ( have_posts() ) : while ( have_posts() ) : the_post();
+        ?>
+    <?php 
+     
+     echo '<li class="col span_1_of_3"><a href="';
+            the_permalink();
+            echo '">';
+        echo '<span class="img">';
+          echo the_post_thumbnail('member'); 
+            echo '</span>';
+            
+             $name_id = get_post_field(get_the_ID(), 'name', true);
+              $name = get_post($name_id);
+
+                echo '<span class="member-name">'.$name->post_title; 
+                echo'</span>';
+
+             echo '<div class="member-info">';
+                the_excerpt();
+            echo '</div>';
+            echo '</a>';
+            echo '</li>';
+    
+?>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
+
+ <?php
+
+          query_posts( array( 
+            'post_type' => 'member', 
+            'order' => 'ASC ', 
+            'posts_per_page' => '20',
+            'meta_query' => array(
+                array(
+                  'key' => 'office',
+                  'value' => '2',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+                 array(
+                  'key' => 'department',
+                  'value' => '1',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+                   array(
+                  'key' => 'title',
+                  'value' => '7',
                   'compare' => '=',
                   'type' => 'numeric',
                 ),
@@ -780,6 +892,62 @@ get_header(); ?>
                   'key' => 'title',
                   'value' => '1',
                   'compare' => '=',
+                  'type' => 'numeric',
+                ),
+              ),
+            )
+          );
+          if ( have_posts() ) : while ( have_posts() ) : the_post();
+        ?>
+    <?php 
+     
+     echo '<li class="col span_1_of_3"><a href="';
+            the_permalink();
+            echo '">';
+        echo '<span class="img">';
+          echo the_post_thumbnail('member'); 
+            echo '</span>';
+            
+             $name_id = get_post_field(get_the_ID(), 'name', true);
+              $name = get_post($name_id);
+
+                echo '<span class="member-name">'.$name->post_title; 
+                echo'</span>';
+
+             echo '<div class="member-info">';
+                the_excerpt();
+            echo '</div>';
+            echo '</a>';
+            echo '</li>';
+    
+?>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
+
+ <?php
+
+          query_posts( array( 
+            'post_type' => 'member', 
+            'order' => 'ASC ', 
+            'posts_per_page' => '20',
+            'meta_query' => array(
+                array(
+                  'key' => 'office',
+                  'value' => '2',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+                 array(
+                  'key' => 'department',
+                  'value' => '1',
+                  'compare' => '=',
+                  'type' => 'numeric',
+                ),
+                   array(
+                  'key' => 'title',
+                  'value' => '7',
+                  'compare' => '=', 
                   'type' => 'numeric',
                 ),
               ),

@@ -166,7 +166,6 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
         
         $testimonial_images = new Super_Custom_Post_Type( 'testimonial' );
         $testimonial_images->set_icon('star');
-
         $testimonial_images->add_meta_box( array(
         'id'      => 'Testimonial Information',
         'context' => 'side',
@@ -191,13 +190,14 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
         'id'      => 'Member Info',
         'context' => 'side',
           'fields'  => array(
+
             'name'=> array(),
-            'title'=> array( 'type' => 'select',   'options' => array( 1 => 'P.T Co-Owner', 2 => 'PT DPT', 3=>'Lic. P.T. Asst', 4 =>'Aide', 5=>'Receptionist', 6 => 'Billing & Accounts Manager'),'multiple' => 'multiple' ),
+            'title'=> array( 'type' => 'select',  'default'=>'', 'options' => array( 1 => 'P.T Co-Owner', 2 => 'PT DPT', 3=>'Lic. P.T. Asst', 4 =>'Aide', 5=>'Receptionist', 6 => 'Billing & Accounts Manager', 7 => 'Clinical Coordinator' ),'multiple' => 'multiple' ),
             'phone'=> array(),
             'email'=> array(),
             
-            'department'=> array( 'type' => 'select',   'options' => array( 1 => 'Clinical', 2 => 'Reception', 3 => 'Accounts' ),'multiple' => 'multiple' ),
-            'office'=> array( 'type' => 'select',   'options' => array( 1 => 'So. Burlington', 2 => 'Shelburne', 3=>'Hinesburg'),'multiple' => 'multiple' ),
+            'department'=> array( 'type' => 'select',  'default'=>'', 'options' => array( 1 => 'Clinical', 2 => 'Reception', 3 => 'Accounts' ),'multiple' => 'multiple' ),
+            'office'=> array( 'type' => 'select', 'default'=>'',  'options' => array( 1 => 'So. Burlington', 2 => 'Shelburne', 3=>'Hinesburg'),'multiple' => 'multiple' ),
             )
       ) );
 

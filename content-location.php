@@ -60,7 +60,7 @@
 
           query_posts( array( 
             'post_type' => 'member', 
-            'order' => 'ASC ', 
+            'order' => 'desc ', 
             'posts_per_page' => '20',
             'meta_query' => array(
                 array(
